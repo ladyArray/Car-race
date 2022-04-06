@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+background-image: url("img/fondo.jpg");
+height:100%;
+flex: 1;
+}
+
+/* Estilos para toda la página */
+.container {
+  min-height: 100vh;
+  font-size: 75%;
+  font-family: monospace;
+}
+
+/* Estilo del menú principal */
+.menu {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+#menuTitle {
+  font-size: 4rem;
+  color: red;
+  text-align: center;
+  animation: moveFromLeft 1.5s ease-out;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-family: "Stick", sans-serif;
+  margin: 25px;
+  color: red;
+}
+.selector {
+  margin: 20px;
+  width: 45px;
+  height: 30px;
+}
+
+footer {
+  background-color: rgb(88, 6, 6);
+  padding: .5rem .8rem;
+}
+
+footer p, a {
+  color: rgb(255, 255, 255);
+  font-family: 'segoe ui';
+  text-align: center;
+}
+
+
+/* Estilos para los botones de la aplicación */
+.btn-send {
+  font-family: "Stick", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color:grey;
+  width: 15%;
+  border-radius: 12px;
+  border: 3px solid rgb(0, 0, 0);
+  margin: 8px;
+}
+
+.btn-send:hover {
+  background-color:red;
+  color: black;
+  cursor: pointer;
+}
+
+/* Estilo para la pantalla de juego */
+.menu-carrera {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+
+/* Estilos para el número de coche*/
+.dorsal {
+  font-size: 1rem;
+  margin-right: 0px;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+/* Estilo para la carretera*/
+.road {
+  width: 100%;
+  height: 50px;
+  margin-left: 0px;
+  border-bottom: 5px dashed red;
+  padding: 0px;
+}
+
+/* Estilos para los coches */
+.vehicles {
+  margin-left: 0px;
+  height: 74%;
+  width: 7%;
+}
+
+/* Estilo para la lista de posiciones */
+.posiciones p {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+#positionsTitle {
+  font-size: 4rem;
+  color: red;
+  text-align: center;
+  animation: moveFromRight 1.5s ease-out;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-16rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(16rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
