@@ -16,7 +16,7 @@ const mainMenu = () => {
 
   // Creamos el título del menú principal
   menu.classList.add("menu");
-  menu.innerHTML = "<h1 id='menuTitle'>Forza horizon 6</h1>";
+  menu.innerHTML = "<h1 id='menuTitle'>Forza horizon't 6</h1>";
 
   // Creamos la selección del número de corredores usando un select
   const selectPlayers = document.createElement("div");
